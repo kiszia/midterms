@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title> 
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>   
+    
+    <form>
+        <a href="index.html" class="back-arrow" style="font-size: 2em; vertical-align: middle;">&#8592;</a>
+        <h4>Sign-up</h4> 
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <span id="usernameError" style="color: red;"></span>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="name@gmail.com">
+        <span id="emailError" style="color: red;"></span>
+
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="atleast 7 character">
+        <span id="passwordError" style="color: red;"></span>
+
+        <br>
+
+        <label for="reEnterPassword">Re-enter Password:</label>
+        <input type="password" id="reEnterPassword" name="reEnterPassword" required>
+        <span id="reEnterPasswordError" style="color: red;"></span>
+
+        <br>
+
+        <button type="button" onclick="validateForm()">Submit</button> 
+
+        <p>Already have an account? <a href="login.html">Login</a> </p>
+
+    </form>
+
+    <script src="js/form.js"></script>
+
+</body>
+</html>

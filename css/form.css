@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;  
+    background:#183141;
+} 
+
+h4 {
+    color: #000;
+    text-align: center;
+    margin: 0; 
+}
+
+form {
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1); /*opacity*/
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(161, 161, 161, 0.2);
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 100px; 
+}
+
+button {
+    background-color: #c7c7c7;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #292929;
+}
+
+a {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #292929;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+.back-arrow {
+    display: block;
+    margin-top: 20px; /* Adjust the margin as needed */
+    color: 292929;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        max-width: 400px; /* Adjusted for medium-sized screens */
+        padding: 20px 20px;  
+    }
+
+    input {
+        padding: 20px; /* Adjusted padding for medium-sized screens */
+    }
+}

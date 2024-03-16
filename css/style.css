@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    float: none;
+} 
+
+.navbar {
+    background-color: #183141; 
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white; /* Set text color to white */
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #122f41;
+}
+
+.navbar-brand img {
+    max-width: 150px; /* Adjust the max-width to make the logo smaller */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust the margin to add space between each nav-item */
+}
+
+.navbar-nav .nav-btn{
+    background-color: #2f4556; 
+}
+
+.dropdown-item{
+    color: #2f4556;
+    z-index: 1;
+}
+
+.dropdown-menu dropdown-menu-right{
+    background-color: #F7AF06;
+}
+
+.w-100-height{
+    height: 90vh;
+    width: 100%;
+}
+ 
+.carousel-item{
+    min-height: 300px;
+}
+
+.carousel-caption{
+    text-align: left;
+    margin-bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+}
+
+.carousel-caption p{
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.carousel-item.carousel-caption input{
+    padding: 0.73 rem 1 rem;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(1,1,1,0.6);
+    z-index: 1;
+}
+ 
+
+.card-bottom{
+    right: 0;
+    margin-top: 10px;
+    border-radius: 1;
+}
+
+.card-color {
+    background: #000;
+    border-radius: 1;
+    padding: 20px; 
+    float: none;
+}
+
+.card-text {
+    color: whitesmoke;
+}
+
+.icon {
+    font-size: 40px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #ffffff74;
+    width: 80px;
+    height: 80px;
+    line-height: 1.8;
+    border-radius: 50%;
+}
+
+.faqs-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #F7AF06;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    margin-bottom: 20px;
+}
+
+.footer-style {
+    background-color: #122f41;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px; 
+}
+
+.p-bold{ 
+    text-transform: uppercase;
+}
+
+.f{
+    font-size: small;
+}
+
+/*SHOP*/
+.container {
+    margin-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.filter-dropdown {
+    width: 150px;
+}
+
+.result {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }    
+    .carousel-caption h5 {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .carousel-caption p {
+        padding: 10px 15px;
+        font-size: 15px;
+    } 
+}
