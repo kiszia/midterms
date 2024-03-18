@@ -13,4 +13,21 @@ function includeHTML() {
             });
     });
 }
-
+ 
+document.addEventListener("DOMContentLoaded", function() {
+  var nav = document.getElementById("nav-placeholder");
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+      if (xmlhttp.status == 200) {
+        nav.innerHTML = xmlhttp.responseText;
+      } else if (xmlhttp.status == 400) {
+        console.error('There was an error 400');
+      } else {
+        console.error('something else other than 200 was returned');
+      }
+    }
+  };
+  xmlhttp.open("GET", "nav.html", true);
+  xmlhttp.send();
+}); 

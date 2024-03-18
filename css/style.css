@@ -30,7 +30,8 @@ h2{
 }
 
 .navbar-brand img {
-    max-width: 150px; /* Adjust the max-width to make the logo smaller */
+    max-width: 130px; /* Adjust the max-width to make the logo smaller */ 
+    margin-left: 50px;
 }
 
 .navbar-nav .nav-item {
@@ -39,6 +40,10 @@ h2{
 
 .navbar-nav .nav-btn{
     background-color: #2f4556; 
+} 
+
+.collapse{
+    margin-right: 50px; 
 }
 
 .dropdown-item{
