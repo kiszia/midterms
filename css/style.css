@@ -9,7 +9,7 @@
 }
 
 h2{
-    float: none;
+    float: none; 
 } 
 
 .navbar {
@@ -49,11 +49,7 @@ h2{
 .dropdown-item{
     color: #2f4556;
     z-index: 1;
-}
-
-.dropdown-menu dropdown-menu-right{
-    background-color: #F7AF06;
-}
+} 
 
 .w-100-height{
     height: 90vh;
@@ -101,7 +97,9 @@ h2{
     z-index: 1;
 }
  
-
+.containers{
+    margin-top: 50px;
+}
 .card-bottom{
     right: 0;
     margin-top: 10px;
@@ -118,6 +116,18 @@ h2{
 .card-text {
     color: whitesmoke;
 }
+
+.custom-img {
+    max-height: 96.5%;
+    width: auto;
+    object-fit: contain; 
+}
+
+.custom-imgs {
+    max-height: 100%; 
+    width: auto;
+    object-fit: contain;
+}   
 
 .icon {
     font-size: 40px;
@@ -187,6 +197,8 @@ h2{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+ 
+
 
 @media only screen and (max-width: 767px) {
     .navbar-nav {

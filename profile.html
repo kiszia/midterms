@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
-    
+
+<div class="container mt-5">
+    <a href="homepage.html" class="back-arrow" style="font-size: 2em; vertical-align: middle; margin-left: 20px;">&#8592;</a>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile-container bg-light p-4">
+                <h3>Profile</h3>
+                <div class="profile-picture">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Profile Picture" class="img-fluid">
+                </div>
+                <div class="edit-profile">
+                    <a href="manage_account.html">Edit</a>
+                </div>
+                <p><strong>Name:</strong> Juan Dela Cruz</p>
+                <p><strong>Username:</strong> jdelacruz</p>
+                <p><strong>Email:</strong> jdelacruz@gmail.com</p>
+                <p><strong>Location:</strong> New York</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="inventory-container bg-light p-4">
+                <h3>Inventory</h3>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="images/c1.png" class="card-img" alt="Item 1 Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Item 1</h5>
+                                <p class="card-text">Description: Cotton Blue</p>
+                                <p class="card-text">Quantity: 2</p>
+                                <p class="card-text">Price: $6.99</p>
+                                <button class="btn btn-outline-primary card-purchase">Purchase</button>
+                                <button class="btn btn-outline-danger card-p">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <p><strong>Total Cost:</strong> $13.98</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer-style mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 style="color: #b5b5b5;">BASIC</h2>
+                <p style="color:#b5b5b5;">Apparel</p>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="https://web.facebook.com/kisz.pagasian" class="btn btn-outline-primary me-2" target="_blank"><i class="bi bi-facebook"></i> </a>
+                <a href="https://twitter.com/login" class="btn btn-outline-info me-2" target="_blank"><i class="bi bi-twitter"></i> </a>
+                <a href="https://www.youtube.com/@BLACKPINK" class="btn btn-outline-danger me-2" target="_blank"><i class="bi bi-youtube"></i> </a>
+                <a href="https://www.instagram.com/kishaaa_p/" class="btn btn-outline-light me-2" target="_blank"><i class="bi bi-instagram"></i> </a>
+            </div>
+        </div>
+    </div>
+    <hr class="text-light">
+    <div class="container">
+        <p class="p-bold">© 2024 Basic Apparel || All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

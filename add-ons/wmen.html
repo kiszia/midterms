@@ -11,7 +11,7 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet"> 
     <!-- Custom Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="../css/style.css">   
     <style>
         .nav {
             cursor: pointer;
@@ -22,8 +22,8 @@
 
         .nav:hover {
             background-color: #c8d9ff; 
-        }
-
+        }  
+        
         .footer-style {
         position: relative; /* Position relative to the content */
         bottom: 0;
@@ -35,6 +35,7 @@
         .content-wrapper {
             margin-bottom: 100px; /* Adjust margin bottom to make space for the footer */
         }
+
     </style>
 </head>
 <body>
@@ -42,8 +43,8 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-183141 fixed-top"> 
         <div class="container">
-            <a class="navbar-brand" href="homepage.html">
-                <img src="images/basica.png" alt="logo" class="w-50">
+            <a class="navbar-brand" href="../homepage.html">
+                <img src="../images/basica.png" alt="logo" class="w-50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,30 +53,30 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="../homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
+                        <a class="nav-link" href="../shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.html">About Us</a>
+                        <a class="nav-link" href="../homepage.html">About Us</a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.html">Contact Us</a>
+                        <a class="nav-link" href="../homepage.html">Contact Us</a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="homepage.html">FAQs</a>
+                        <a class="nav-link" href="../homepage.html">FAQs</a>
                     </li> 
                     <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <i class="bi bi-person-circle"></i> 
                     </a>
-                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="profileDropdown"> <!-- Added dropdown-menu-right for right alignment -->
-                        <a class="dropdown-item text-dark" href="profile.html">Profile</a>
-                        <a class="dropdown-item text-dark" href="manage_account.html">Manage Account</a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="profileDropdown">  
+                        <a class="dropdown-item text-dark" href="../profile.html">Profile</a>
+                        <a class="dropdown-item text-dark" href="../manage_account.html">Manage Account</a>
                         <div class="dropdown-divider"></div> 
-                        <a class="dropdown-item text-dark" href="index.html">Logout</a>
+                        <a class="dropdown-item text-dark" href="../index.html">Logout</a>
                     </div>
                     </li>
                 </ul>
@@ -83,7 +84,7 @@
         </div>
     </nav>
 
-    <br><br><br><br><br>
+    <br><br><br><br>
 
     <!-- Search Bar and Content -->
     <div class="container-fluid min-hv-100">
@@ -91,6 +92,11 @@
             <!-- Sidebar -->
             <div class="col-lg-3 bg-light d-none d-lg-block position-fixed" style="height: 100vh;">
                 <div class="p-4">
+                    <a href="../shop.html" class="btn btn-primary">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    
+                <h2>WOMENS SECTION</h2>
                     <!-- Search Bar -->
                     <div class="input-group mb-3">
                         <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
@@ -103,117 +109,24 @@
                     <!-- Category Listing -->
                     <div class="mb-3">
                         <h5>Categories</h5> 
-                        <p class="nav"><a href="add-ons/kids.html">Kids wear</a></p>
-                        <p class="nav"><a href="add-ons/mens.html">Mens wear</a></p>
-                        <p class="nav"><a href="add-ons/wmen.html">Womens wear</a></p>
+                        <p class="nav"><a href="#tops">Tops</a></p>
+                        <p class="nav"><a href="#bottoms">Bottoms</a></p>
+                        <p class="nav"><a href="#accs">Accessories</a></p>
                     </div>
                 </div>
             </div>
             
-
             <!-- Content -->
             <div class="col-lg-9 offset-lg-3">
-                <!-- Content 1 -->  
-                <div class="content-column"> 
-                    <p class="mb-0">KIDS WEAR</p> 
+                <!-- Content 1 --> <br>             
+                <div id="tops" class="content-column"> 
+                    <br><br><br><br>
+                    <p class="mb-0">Tops</p> 
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-4">
                         <!-- Product Cards --> 
                         <div class="col">
                             <div class="card">
-                                <a href="../add-ons/kids.html">
-                                    <img src="images/c1.png" class="card-img-top" alt="Product 1">
-                                </a> 
-                                <div class="card-body">
-                                    <h5 class="card-title">Cotton Blue</h5>
-                                    <p class="card-text text-black">$6.99</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/kids.html">
-                                    <img src="images/c2.png" class="card-img-top" alt="Product 1">
-                                </a> 
-                                <div class="card-body">
-                                    <h5 class="card-title">Black Cropped Hoodie</h5>
-                                    <p class="card-text text-black">$8.99</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/kids.html">
-                                    <img src="images/c3.png"
-                                    class="card-img-top" alt="Product 1">
-                                </a>  
-                                <div class="card-body">
-                                    <h5 class="card-title">Beige Plain Tee</h5>
-                                    <p class="card-text text-black">$5.99</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>    
-                </div> 
-
-                <!-- Content 2 -->  
-                <div class="content-column"> 
-                    <p class="mb-0">MENS WEAR</p> 
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-4"> 
-                        <!-- Product Cards --> 
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/mens.html">
-                                    <img src="images/c7.png" class="card-img-top" alt="Product 1">
-                                </a>  
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Grey Basic Hoodie</h5>
-                                    <p class="card-text text-black">$12.99</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/mens.html">
-                                    <img src="images/c9.png" class="card-img-top" alt="Product 1">
-                                </a>  
-                                <div class="card-body">
-                                    <h5 class="card-title">Plain Gray Basic Tee</h5>
-                                    <p class="card-text text-black">$8.99</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/mens.html">
-                                    <img src="images/c8.png" class="card-img-top" alt="Product 1">
-                                </a>  
-                                <div class="card-body">
-                                    <h5 class="card-title">Plain Light Gray Basic Tee</h5>
-                                    <p class="card-text text-black">$8.79</p>
-                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Content 3 -->  
-                <div class="content-column">
-                    <p class="mb-0">WOMENS WEAR</p> 
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-4">
-                        <!-- Product Cards --> 
-                        <div class="col">
-                            <div class="card">
-                                <a href="../add-ons/wmen.html">
-                                    <img src="images/c5.png" class="card-img-top" alt="Product 1">
-                                </a>  
+                                <img src="../images/c5.png" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Gray Basic Hoodie</h5>
                                     <p class="card-text text text-black">$10.89</p>
@@ -223,9 +136,7 @@
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="../add-ons/wmen.html">
-                                    <img src="images/c4.png" class="card-img-top" alt="Product 1">
-                                </a>  
+                                <img src="../images/c4.png" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Brown Basic Tee</h5>
                                     <p class="card-text text-black">$6.39</p>
@@ -235,12 +146,100 @@
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="../add-ons/wmen.html">
-                                    <img src="images/c6.png" class="card-img-top" alt="Product 1">
-                                </a>                                
+                                <img src="../images/c6.png" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
                                     <h5 class="card-title">Navy Blue Basic Hoodie</h5>
                                     <p class="card-text text-black">$14.99</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c10.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Boxy Blouse</h5>
+                                    <p class="card-text text-black">$3.99</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c11.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plain White V-neck Shirt</h5>
+                                    <p class="card-text text-black">$8.99</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>    
+                </div> 
+
+                <!-- Content 2 -->  
+                <div id="bottoms" class="content-column"> 
+                    <br><br><br><br>
+                    <p class="mb-0">Bottoms</p> 
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-4"> 
+                        
+                        <p class="card-title">Out of Stock</p>
+
+                    </div>
+                </div>
+
+                <!-- Content 3 -->  
+                <div id="accs" class="content-column">
+                    <br><br><br><br>
+                    <p class="mb-0">Accessories</p> 
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-4">
+                        <!-- Product Cards --> 
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c30.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cross Rings</h5>
+                                    <p class="card-text text-black">$8,999</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c31.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosy Gold Petals Watch</h5>
+                                    <p class="card-text text-black">$15,999</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c32.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Minimalist Jewelries</h5>
+                                    <p class="card-text text-black">$1,999</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c33.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">4-Layer Pearl Necklace</h5>
+                                    <p class="card-text text-black">$4,999</p>
+                                    <button class="cartBtn btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/c34.png" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Square Watch</h5>
+                                    <p class="card-text text-black">$4,999</p>
                                     <button class="cartBtn btn btn-primary">Add to Cart</button>
                                 </div>
                             </div>
@@ -262,19 +261,20 @@
         </div>
         <hr class="text-light"> 
         <p class="p-bold">© 2024 Basic Apparel || All Rights Reserved</p>
-    </footer> 
+    </footer>
+      
     
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
-    <script src="js/index.js"></script> 
+    <script src="../js/index.js"></script> 
     <script> 
         var cartButtons = document.querySelectorAll('.cartBtn');
             
         cartButtons.forEach(function(button) {
             button.addEventListener('click', function() {
-                window.location.href = 'profile.html'; 
+                window.location.href = '../profile.html'; // Redirect to profile.html
             });
         });
     </script>
